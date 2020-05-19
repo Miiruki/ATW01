@@ -17,3 +17,14 @@ LIBS=-L/usr/X11R6/lib -L /home/atw01/.env/lib/ -lXm -lXt -lX11 -lm
 
 Il va maintenant chercher les librairies et les includes dans /home/atw01/.env/
 
+
+ATTENTION AU VERSIONS DES FICHIERS CA PEUT POSER PROBLEME
+
+En cas de Probleme : ln -s nom_du_fichier_buguer nom_du_bon_fichier ( on crée juste un lien symbolique entre les deux fichiers ) 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pour changer la variable d'environnement : LD_LIBRARY_PATH ----> export LD_LIBRARY_PATH=/home/atw01/.env/usr/lib/
+
+Pour la mettre direct dans le bashrc --> echo "export LD_LIBRARY_PATH=/home/atw01/.env/usr/lib" >> ~/.bashrc
+
+ 
